@@ -6,6 +6,7 @@ public class Result {
     private java.sql.Date date;
     private int mark;
 
+
     public Result(String login, String test, Date date, int mark) {
         this.login = login;
         this.test = test;
