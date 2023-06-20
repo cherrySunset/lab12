@@ -4,10 +4,9 @@ public class Result {
     private String login;
     private String test;
     private java.sql.Date date;
-    private int mark;
+    private double mark;
 
-
-    public Result(String login, String test, Date date, int mark) {
+    public Result(String login, String test, Date date, double mark) {
         this.login = login;
         this.test = test;
         this.date = date;
@@ -38,11 +37,16 @@ public class Result {
         this.date = date;
     }
 
-    public int getMark() {
+    public double getMark() {
         return mark;
     }
 
-    public void setMark(int mark) {
+    public void setMark(double mark) {
         this.mark = mark;
+    }
+
+    @Override
+    public String toString() {
+        return "\n" + login + ";" + test + ";" + date + ";" + mark;
     }
 }
